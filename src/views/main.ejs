@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {border-radius: 10px;}
+        li {list-style-type: none; font-size: 15px; padding-left: 1px; text-align: left;
+            display: list-item;
+    text-align: -webkit-match-parent;}
+        #main { text-align: center; }
+        #wrap { display: flex; width: 1000px; height: 100%; margin: auto;}
+        #wrap div:nth-child(2) { background: blue; margin-left: 60px; width: 700px;}
+        #wrap div:nth-child(3) { background: green; margin-left: 40px; width: 200px;}
+        nav a {text-decoration: none; color: black; }
+        #nn {text-align: center; }
+        nav label {padding: 0 100px 0 100px; }
+        .dropdown{
+            position : relative;
+            display : inline-block;
+        }
+        .dropdown-content{
+            display : none;
+            position : absolute;
+            z-index : 1; 
+        }
+
+        .dropdown-content a{
+            display : block;
+            flex-flow: row wrap; 
+            width: 100px; height: 50px; 
+            margin: auto;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block; 
+        }
+        ul.top_nav li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 20px;
+    font-size: 13px;
+}
+.top_block {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #555;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    
+}
+ul.middle_nav{
+    
+    display: flex; flex-flow: row wrap; 
+            text-align: center; 
+
+}
+ul.top_nav {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    width: 1200px;
+    margin: auto;
+}
+.global_block {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    height: 90px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.guide {
+    font-size: 13px;
+    color: #333333;
+    line-height: 20px;
+    font-family: 'Nanum Gothic';
+    font-weight: 400;
+    
+}
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <nav>
+
+    <div id="header">
+			
+		<div class="top_block">
+			<div class="global_block">
+<!-- 				<ul class="top_high"> -->
+
+
+<!-- 				</ul> -->
+				<ul class="top_nav">
+					
+					
+
+					
+						<li class="login"><a href="">로그인</a></li>
+						<li class="membership"><a href="">회원가입</a></li>
+					
+					
+
+			 		<li><a href="">예약확인/결제</a></li>
+					<li><a href="">기업/단체문의</a></li>
+					<li><a href="">고객센터</a>
+						<!-- <ul class="ctr_nav">
+							<li><a href="/cs/faqList.yb">FAQ</a></li>
+							<li><a href="/cs/qnaGuide.yb">1:1문의</a></li>
+							<li><a href="/cs/estimateWrite.yb">견적문의</a></li>
+							<li><a href="/cs/pointGuide.yb">마일리지 안내</a></li>
+							<li class="ctr_num">여행상담<span>1544-2288</span></li>
+						</ul> -->
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="global_block">
+            
+                <ul class="middle_nav"> 
+                    <li class="dropdown"><span class="dropbtn">
+                        <a href="#">국내패키지</a>
+                        </span>
+                        <div class="dropdown-content">
+                            <dl><dt>국내패키지</dt>
+                                <dd>
+                                    <p><a href="">전주</a></p>
+                                    <p><a href="">대구</a></p>
+                                    <p><a href="">부산</a></p>
+                                    <p><a href="">대전</a></p>
+                                </dd>
+                            </dl>
+                        </div>
+    
+                    </li>
+                    
+    
+                </ul>
+                <ul class="middle_nav"> 
+                    <li class="dropdown">
+                        <span class="dropbtn">
+                            <a href="#">해외패키지</a>
+                    </span>
+                        <div class="dropdown-content">
+                            <dl><dt>해외패키지</dt>
+                                <dd>
+                                    <p><a href="">일본</a></p>
+                                    <p><a href="">유럽</a></p>
+                                    <p><a href="">중국</a></p>
+                                    <p><a href="">동아시아</a></p>
+                                </dd>
+                            </dl>
+                        </div>
+    
+                    </li>
+                    
+    
+                </ul>
+                <ul class="middle_nav"> 
+                    <li class="dropdown">
+                        <span class="dropbtn">
+                            <a href="#">항공</a>
+                        </span>
+                        <div class="dropdown-content">
+                            <dl><dt>국내</dt>
+                                <dd>
+                                    <p><a href="">제주도</a></p>
+                                    <p><a href="">부산</a></p>
+                                    <p><a href="">서울</a></p>
+                                    <p><a href="">인천</a></p>
+                                </dd>
+                            </dl>
+                            <dl><dt>해외</dt>
+                                <dd>
+                                    <p><a href="">일본</a></p>
+                                    <p><a href="">유럽</a></p>
+                                    <p><a href="">중국</a></p>
+                                    <p><a href="">동아시아</a></p>
+                                </dd>
+                            </dl>
+                            
+                        </div>
+    
+                    </li>
+                    
+    
+                </ul>
+                <ul class="middle_nav"> 
+                    <li class="dropdown">
+                        <span class="dropbtn">
+                            <a href="#">호텔</a>
+                        </span>
+                        <div class="dropdown-content">
+                            <dl><dt>국내</dt>
+                                <dd>
+                                    <p><a href="">제주도</a></p>
+                                    <p><a href="">부산</a></p>
+                                    <p><a href="">서울</a></p>
+                                    <p><a href="">인천</a></p>
+                                </dd>
+                            </dl>
+                            <dl><dt>해외</dt>
+                                <dd>
+                                    <p><a href="">일본</a></p>
+                                    <p><a href="">유럽</a></p>
+                                    <p><a href="">중국</a></p>
+                                    <p><a href="">동아시아</a></p>
+                                </dd>
+                            </dl>
+                            
+                        </div>
+    
+                    </li>
+                    
+    
+                </ul>
+           </div>
+
+        </nav>
+    <hr>
+    <header>
+        <img src="https://cdn.sisaweek.com/news/photo/202001/129567_117767_5852.jpg">
+    </header>
+    
+   
+    <section>
+        <fieldset>메인</fieldset>
+    </section>
+    <section>
+    <fieldset>
+        <a href="/worldcup/1">여행지 월드컵</a>
+    </fieldset> 
+</section>
+<section class="guide">
+    <h1>이용안내</h1>
+    <ul>
+        <li>
+            <a href="" class="" rel="">질문과 답변</a>
+        </li>
+        <li>
+            <a href="" class="" rel="">자주 묻는 질문</a>
+        </li>
+        <li>
+            <a href="" class="" rel="">공지사항</a>
+        </li>
+        <li>
+            <a href="" class="" rel="">후기게시판</a>
+        </li>
+    </ul>
+</section>
+</body>
+</html>
